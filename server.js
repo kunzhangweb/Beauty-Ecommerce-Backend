@@ -14,6 +14,17 @@ const app = express();
 // sending undefined properties solution
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "https://ebeauty.vercel.app",
+      "https://ebeauty-git-master-kzweber.vercel.app",
+      "https://ebeauty-a0b4zbzsp-kzweber.vercel.app",
+    ],
+    credentials: true,
+  })
+);
 
 const PORT = process.env.PORT || 5000;
 mongoose.connect(
