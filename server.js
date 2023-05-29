@@ -21,7 +21,7 @@ app.use(
       "http://localhost:3000",
       "https://ebeauty.vercel.app",
       "https://ebeauty-git-master-kzweber.vercel.app",
-      "https://ebeauty-a0b4zbzsp-kzweber.vercel.app",
+      "https://ebeauty-8tczm72qx-kzweber.vercel.app",
     ],
     credentials: true,
   })
